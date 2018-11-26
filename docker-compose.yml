@@ -1,0 +1,6 @@
+version: '3.4'
+services:
+  mysql:
+    build: .
+    ports:
+     - 33061:3306
