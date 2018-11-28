@@ -1,10 +1,10 @@
-FROM dimakazankov/mysqlwincontainer
+FROM dimakazankov/mysqlnanoserver
 
-COPY my.ini C:/MySQL/
-COPY initmysql.cmd C:/
+COPY my.ini C:/app/MySQL/
+COPY initmysql.cmd C:/app/
 
-VOLUME C:\\MySQL\\data
+VOLUME C:\\app\\MySQL\\data
 
 EXPOSE 3306
 
-ENTRYPOINT ["C:\\initmysql.cmd"]
+ENTRYPOINT ["C:\\app\\initmysql.cmd"]
