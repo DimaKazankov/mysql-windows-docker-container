@@ -4,6 +4,6 @@ C:\app\MySQL\bin\mysqld --install MySQL --defaults-file="C:\app\MySQL\my.ini"
 
 powershell Start-Service mysql
 
-C:\app\MySQL\bin\mysql -e "CREATE DATABASE rocs_dev; quit;"
+C:\app\MySQL\bin\mysql -e "CREATE DATABASE rocs_dev;"
 
 ping localhost -t
